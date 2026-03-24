@@ -1,6 +1,7 @@
 import { readFileSync } from "fs";
 import path from "path";
 import type { InsightsData, StaticFeedbackData } from "@/lib/types";
+import { pivotFeatureOverTime } from "@/lib/featurePivot";
 import Dashboard from "@/components/Dashboard";
 
 const isStaticExport = process.env.NEXT_STATIC_EXPORT === "1";
@@ -12,7 +13,7 @@ function getInsightsFromJson(): StaticFeedbackData {
   } catch {
     return {
       totalCount: 0, byType: [], byFeature: [], overTime: [],
-      recentFeedback: [], lastUpdated: null,
+      recentFeedback: [], featureOverTime: [], lastUpdated: null,
     };
   }
 }
@@ -60,9 +61,16 @@ function getInsightsFromDb(): InsightsData {
       `)
       .all() as InsightsData["recentFeedback"];
 
-    return { totalCount, byType, byFeature, overTime, recentFeedback };
+    const rawFeatureOverTime = db.prepare(`
+      SELECT date, feature_category, COUNT(*) as count
+      FROM feedback GROUP BY date, feature_category ORDER BY date ASC
+    `).all() as { date: string; feature_category: string; count: number }[];
+
+    const featureOverTime = pivotFeatureOverTime(rawFeatureOverTime);
+
+    return { totalCount, byType, byFeature, overTime, recentFeedback, featureOverTime };
   } catch {
-    return { totalCount: 0, byType: [], byFeature: [], overTime: [], recentFeedback: [] };
+    return { totalCount: 0, byType: [], byFeature: [], overTime: [], recentFeedback: [], featureOverTime: [] };
   }
 }
 

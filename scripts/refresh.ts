@@ -10,6 +10,7 @@ import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as path from "path";
 import type { InsightsData, StaticFeedbackData } from "../lib/types";
+import { pivotFeatureOverTime } from "../lib/featurePivot";
 
 // MUST run before any dynamic imports that read process.env
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -128,6 +129,13 @@ async function main() {
     `)
     .all() as InsightsData["recentFeedback"];
 
+  const rawFeatureOverTime = db.prepare(`
+    SELECT date, feature_category, COUNT(*) as count
+    FROM feedback GROUP BY date, feature_category ORDER BY date ASC
+  `).all() as { date: string; feature_category: string; count: number }[];
+
+  const featureOverTime = pivotFeatureOverTime(rawFeatureOverTime);
+
   // --- 5. Write static JSON ---
   const output: StaticFeedbackData = {
     totalCount,
@@ -135,6 +143,7 @@ async function main() {
     byFeature,
     overTime,
     recentFeedback,
+    featureOverTime,
     lastUpdated: new Date().toISOString(),
   };
 

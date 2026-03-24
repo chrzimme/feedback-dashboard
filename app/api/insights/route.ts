@@ -1,5 +1,6 @@
 import { getDb } from "@/lib/db";
 import type { InsightsData } from "@/lib/types";
+import { pivotFeatureOverTime } from "@/lib/featurePivot";
 
 export type { InsightsData };
 
@@ -54,12 +55,22 @@ export async function GET() {
       `)
       .all() as InsightsData["recentFeedback"];
 
+    const rawFeatureOverTime = db.prepare(`
+      SELECT date, feature_category, COUNT(*) as count
+      FROM feedback
+      GROUP BY date, feature_category
+      ORDER BY date ASC
+    `).all() as { date: string; feature_category: string; count: number }[];
+
+    const featureOverTime = pivotFeatureOverTime(rawFeatureOverTime);
+
     return Response.json({
       totalCount,
       byType,
       byFeature,
       overTime,
       recentFeedback,
+      featureOverTime,
     } satisfies InsightsData);
   } catch (error) {
     console.error("Insights error:", error);

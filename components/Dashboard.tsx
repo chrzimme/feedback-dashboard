@@ -7,6 +7,7 @@ import StatCard from "./StatCard";
 import FeedbackOverTime from "./FeedbackOverTime";
 import TypeBreakdown from "./TypeBreakdown";
 import FeatureBreakdown from "./FeatureBreakdown";
+import FeaturesOverTime from "./FeaturesOverTime";
 import FeedbackTable from "./FeedbackTable";
 
 interface Props {
@@ -20,6 +21,9 @@ export default function Dashboard({ initial, readOnly = false, lastUpdated }: Pr
   const [syncing, setSyncing] = useState(false);
   const [reclassifying, setReclassifying] = useState(false);
   const [syncMsg, setSyncMsg] = useState<string | null>(null);
+
+  // Shared filter: null = all types shown
+  const [selectedType, setSelectedType] = useState<string | null>(null);
 
   const refreshInsights = useCallback(async () => {
     const insights = await fetch("/api/insights");
@@ -64,9 +68,7 @@ export default function Dashboard({ initial, readOnly = false, lastUpdated }: Pr
   const totalComments = data.byType.find((t) => t.type === "comment")?.count ?? 0;
 
   const formattedLastUpdated = lastUpdated
-    ? new Date(lastUpdated).toLocaleDateString("en-US", {
-        month: "short", day: "numeric", year: "numeric",
-      })
+    ? new Date(lastUpdated).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
     : null;
 
   return (
@@ -83,7 +85,6 @@ export default function Dashboard({ initial, readOnly = false, lastUpdated }: Pr
             </p>
           </div>
 
-          {/* Only show sync/reclassify controls in local dev mode */}
           {!readOnly && (
             <div className="flex items-center gap-3">
               {syncMsg && <span className="text-sm text-gray-600">{syncMsg}</span>}
@@ -109,6 +110,7 @@ export default function Dashboard({ initial, readOnly = false, lastUpdated }: Pr
       </header>
 
       <main className="mx-auto max-w-7xl space-y-6 px-6 py-8">
+        {/* Stat cards */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <StatCard label="Total Feedback" value={data.totalCount} color="border-gray-200" />
           <StatCard label="Bugs" value={totalBugs} color="border-red-200" />
@@ -116,14 +118,25 @@ export default function Dashboard({ initial, readOnly = false, lastUpdated }: Pr
           <StatCard label="Comments" value={totalComments} color="border-green-200" />
         </div>
 
+        {/* Feedback over time (filtered by selected type) + Type pie */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <FeedbackOverTime data={data.overTime} />
+            <FeedbackOverTime data={data.overTime} selectedType={selectedType} />
           </div>
-          <TypeBreakdown data={data.byType} />
+          <TypeBreakdown
+            data={data.byType}
+            selectedType={selectedType}
+            onTypeSelect={setSelectedType}
+          />
         </div>
 
+        {/* Feature category breakdown (all features, auto height) */}
         <FeatureBreakdown data={data.byFeature} />
+
+        {/* Features over time — separate line chart per category */}
+        <FeaturesOverTime data={data.featureOverTime} />
+
+        {/* Raw feedback table */}
         <FeedbackTable data={data.recentFeedback} readOnly={readOnly} />
       </main>
     </div>

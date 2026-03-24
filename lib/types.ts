@@ -27,6 +27,8 @@ export interface InsightsData {
     slack_ts: string;
     channel_id: string;
   }[];
+  /** Pivoted: each row is { date, [featureCategory]: count, ... } */
+  featureOverTime: Array<Record<string, string | number>>;
 }
 
 export interface StaticFeedbackData extends InsightsData {
