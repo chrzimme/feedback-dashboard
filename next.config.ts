@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     ? {
         output: "export",
         trailingSlash: true,
-        basePath: "/pages/chrzimme/feedback-dashboard",
+        basePath: "/feedback-dashboard",
         images: { unoptimized: true },
       }
     : {

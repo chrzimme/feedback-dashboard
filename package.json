@@ -2,7 +2,7 @@
   "name": "feedback-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://git.corp.adobe.com/pages/chrzimme/feedback-dashboard",
+  "homepage": "https://chrzimme.github.io/feedback-dashboard",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
