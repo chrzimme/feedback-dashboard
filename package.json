@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "refresh": "tsx scripts/refresh.ts",
-    "build:static": "NEXT_STATIC_EXPORT=1 next build",
+    "build:static": "mv app/api app/_api_bak && NEXT_STATIC_EXPORT=1 next build; mv app/_api_bak app/api",
     "deploy": "npm run refresh && npm run build:static && gh-pages -d out --dotfiles"
   },
   "dependencies": {
