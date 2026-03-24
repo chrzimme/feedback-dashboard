@@ -43,9 +43,10 @@ interface JiraTicketState {
 
 interface Props {
   data: Row[];
+  readOnly?: boolean;
 }
 
-export default function FeedbackTable({ data }: Props) {
+export default function FeedbackTable({ data, readOnly = false }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [typeFilter, setTypeFilter] = useState("all");
   const [featureFilter, setFeatureFilter] = useState("all");
@@ -186,8 +187,8 @@ export default function FeedbackTable({ data }: Props) {
                           </a>
                         )}
 
-                        {/* JIRA button / ticket badge */}
-                        {jira?.key ? (
+                        {/* JIRA button / ticket badge — only in local dev mode */}
+                        {!readOnly && jira?.key ? (
                           <a
                             href={jira.url}
                             target="_blank"
@@ -197,14 +198,14 @@ export default function FeedbackTable({ data }: Props) {
                             <ExternalLink size={12} />
                             {jira.key}
                           </a>
-                        ) : jira?.error ? (
+                        ) : !readOnly && jira?.error ? (
                           <span
                             title={jira.error}
                             className="rounded-md border border-red-200 bg-red-50 px-2 py-1 text-xs text-red-600 cursor-help"
                           >
                             Error
                           </span>
-                        ) : (
+                        ) : !readOnly ? (
                           <button
                             onClick={() => createJiraTicket(row)}
                             disabled={jira?.loading}
@@ -219,7 +220,7 @@ export default function FeedbackTable({ data }: Props) {
                               "＋ JIRA"
                             )}
                           </button>
-                        )}
+                        ) : null}
                       </div>
                     </td>
                   </tr>

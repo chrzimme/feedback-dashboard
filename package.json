@@ -2,17 +2,22 @@
   "name": "feedback-dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://git.corp.adobe.com/pages/chrzimme/feedback-dashboard",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "refresh": "tsx scripts/refresh.ts",
+    "build:static": "NEXT_STATIC_EXPORT=1 next build",
+    "deploy": "npm run refresh && npm run build:static && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
     "@slack/web-api": "^7.15.0",
     "better-sqlite3": "^12.8.0",
     "date-fns": "^4.1.0",
+    "dotenv": "^17.3.1",
     "lucide-react": "^1.6.0",
     "next": "16.2.1",
     "react": "19.2.4",
@@ -27,7 +32,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

@@ -1,8 +1,13 @@
+import { readFileSync } from "fs";
+import path from "path";
 import { getDb } from "@/lib/db";
 import type { InsightsData } from "@/app/api/insights/route";
+import type { StaticFeedbackData } from "@/scripts/refresh";
 import Dashboard from "@/components/Dashboard";
 
-function getInsights(): InsightsData {
+const isStaticExport = process.env.NEXT_STATIC_EXPORT === "1";
+
+function getInsightsFromDb(): InsightsData {
   try {
     const db = getDb();
 
@@ -11,9 +16,7 @@ function getInsights(): InsightsData {
     ).count;
 
     const byType = db
-      .prepare(
-        "SELECT type, COUNT(*) as count FROM feedback GROUP BY type ORDER BY count DESC"
-      )
+      .prepare("SELECT type, COUNT(*) as count FROM feedback GROUP BY type ORDER BY count DESC")
       .all() as InsightsData["byType"];
 
     const byFeature = db
@@ -46,7 +49,7 @@ function getInsights(): InsightsData {
 
     const recentFeedback = db
       .prepare(`
-        SELECT id, date, type, feature_category, summary, text
+        SELECT id, date, type, feature_category, summary, text, slack_ts, channel_id
         FROM feedback
         ORDER BY slack_ts DESC
         LIMIT 50
@@ -55,17 +58,28 @@ function getInsights(): InsightsData {
 
     return { totalCount, byType, byFeature, overTime, recentFeedback };
   } catch {
+    return { totalCount: 0, byType: [], byFeature: [], overTime: [], recentFeedback: [] };
+  }
+}
+
+function getInsightsFromJson(): StaticFeedbackData {
+  try {
+    const filePath = path.join(process.cwd(), "public", "data", "feedback.json");
+    return JSON.parse(readFileSync(filePath, "utf-8")) as StaticFeedbackData;
+  } catch {
     return {
-      totalCount: 0,
-      byType: [],
-      byFeature: [],
-      overTime: [],
-      recentFeedback: [],
+      totalCount: 0, byType: [], byFeature: [], overTime: [],
+      recentFeedback: [], lastUpdated: null,
     };
   }
 }
 
 export default function Home() {
-  const data = getInsights();
+  if (isStaticExport) {
+    const data = getInsightsFromJson();
+    return <Dashboard initial={data} readOnly lastUpdated={data.lastUpdated} />;
+  }
+
+  const data = getInsightsFromDb();
   return <Dashboard initial={data} />;
 }

@@ -11,9 +11,11 @@ import FeedbackTable from "./FeedbackTable";
 
 interface Props {
   initial: InsightsData;
+  readOnly?: boolean;
+  lastUpdated?: string | null;
 }
 
-export default function Dashboard({ initial }: Props) {
+export default function Dashboard({ initial, readOnly = false, lastUpdated }: Props) {
   const [data, setData] = useState<InsightsData>(initial);
   const [syncing, setSyncing] = useState(false);
   const [reclassifying, setReclassifying] = useState(false);
@@ -31,13 +33,7 @@ export default function Dashboard({ initial }: Props) {
       const res = await fetch("/api/sync", { method: "POST" });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "Sync failed");
-
-      setSyncMsg(
-        json.synced > 0
-          ? `Synced ${json.synced} new messages.`
-          : "Already up to date."
-      );
-
+      setSyncMsg(json.synced > 0 ? `Synced ${json.synced} new messages.` : "Already up to date.");
       await refreshInsights();
     } catch (err) {
       setSyncMsg(`Error: ${String(err)}`);
@@ -64,50 +60,55 @@ export default function Dashboard({ initial }: Props) {
   }, [refreshInsights]);
 
   const totalBugs = data.byType.find((t) => t.type === "bug")?.count ?? 0;
-  const totalFeatureRequests =
-    data.byType.find((t) => t.type === "feature_request")?.count ?? 0;
-  const totalComments =
-    data.byType.find((t) => t.type === "comment")?.count ?? 0;
+  const totalFeatureRequests = data.byType.find((t) => t.type === "feature_request")?.count ?? 0;
+  const totalComments = data.byType.find((t) => t.type === "comment")?.count ?? 0;
+
+  const formattedLastUpdated = lastUpdated
+    ? new Date(lastUpdated).toLocaleDateString("en-US", {
+        month: "short", day: "numeric", year: "numeric",
+      })
+    : null;
 
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="border-b bg-white px-6 py-4 shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">
-              Customer Feedback Dashboard
-            </h1>
-            <p className="text-sm text-gray-500">Video Editor · Slack feedback insights</p>
+            <h1 className="text-2xl font-bold text-gray-900">Customer Feedback Dashboard</h1>
+            <p className="text-sm text-gray-500">
+              Video Editor · Slack feedback insights
+              {formattedLastUpdated && (
+                <span className="ml-2 text-gray-400">· Last updated {formattedLastUpdated}</span>
+              )}
+            </p>
           </div>
-          <div className="flex items-center gap-3">
-            {syncMsg && (
-              <span className="text-sm text-gray-600">{syncMsg}</span>
-            )}
-            <button
-              onClick={reclassify}
-              disabled={reclassifying || syncing}
-              className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-60"
-            >
-              <Tags size={16} className={reclassifying ? "animate-pulse" : ""} />
-              {reclassifying ? "Re-classifying…" : "Re-classify All"}
-            </button>
-            <button
-              onClick={sync}
-              disabled={syncing || reclassifying}
-              className="flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-60"
-            >
-              <RefreshCw
-                size={16}
-                className={syncing ? "animate-spin" : ""}
-              />
-              {syncing ? "Syncing…" : "Sync Slack"}
-            </button>
-          </div>
+
+          {/* Only show sync/reclassify controls in local dev mode */}
+          {!readOnly && (
+            <div className="flex items-center gap-3">
+              {syncMsg && <span className="text-sm text-gray-600">{syncMsg}</span>}
+              <button
+                onClick={reclassify}
+                disabled={reclassifying || syncing}
+                className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-60"
+              >
+                <Tags size={16} className={reclassifying ? "animate-pulse" : ""} />
+                {reclassifying ? "Re-classifying…" : "Re-classify All"}
+              </button>
+              <button
+                onClick={sync}
+                disabled={syncing || reclassifying}
+                className="flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-60"
+              >
+                <RefreshCw size={16} className={syncing ? "animate-spin" : ""} />
+                {syncing ? "Syncing…" : "Sync Slack"}
+              </button>
+            </div>
+          )}
         </div>
       </header>
 
       <main className="mx-auto max-w-7xl space-y-6 px-6 py-8">
-        {/* Stat cards */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <StatCard label="Total Feedback" value={data.totalCount} color="border-gray-200" />
           <StatCard label="Bugs" value={totalBugs} color="border-red-200" />
@@ -115,7 +116,6 @@ export default function Dashboard({ initial }: Props) {
           <StatCard label="Comments" value={totalComments} color="border-green-200" />
         </div>
 
-        {/* Charts row */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <FeedbackOverTime data={data.overTime} />
@@ -123,11 +123,8 @@ export default function Dashboard({ initial }: Props) {
           <TypeBreakdown data={data.byType} />
         </div>
 
-        {/* Feature breakdown */}
         <FeatureBreakdown data={data.byFeature} />
-
-        {/* Table */}
-        <FeedbackTable data={data.recentFeedback} />
+        <FeedbackTable data={data.recentFeedback} readOnly={readOnly} />
       </main>
     </div>
   );
