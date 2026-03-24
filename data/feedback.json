@@ -1717,5 +1717,734 @@
       "channel_id": "C05P8KUGLJX"
     }
   ],
-  "lastUpdated": "2026-03-24T22:11:13.180Z"
+  "featureOverTime": [
+    {
+      "date": "2023-08-28",
+      "General": 4,
+      "Share & Commenting": 3
+    },
+    {
+      "date": "2023-08-29",
+      "General": 1
+    },
+    {
+      "date": "2023-10-10",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2023-10-24",
+      "Timeline": 1
+    },
+    {
+      "date": "2023-11-30",
+      "Audio": 1
+    },
+    {
+      "date": "2024-01-31",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-04-02",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-04-03",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-04-09",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-05-22",
+      "User Interface": 1
+    },
+    {
+      "date": "2024-05-29",
+      "Firefly": 1,
+      "Import / Media": 1
+    },
+    {
+      "date": "2024-06-20",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-06-21",
+      "Playback": 1
+    },
+    {
+      "date": "2024-06-28",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-07-16",
+      "User Interface": 1
+    },
+    {
+      "date": "2024-07-20",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-07-23",
+      "General": 1,
+      "Import / Media": 1
+    },
+    {
+      "date": "2024-07-26",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-07-31",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-08-01",
+      "Text-based Editing": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2024-08-05",
+      "Text-based Editing": 1
+    },
+    {
+      "date": "2024-08-07",
+      "Timeline": 4
+    },
+    {
+      "date": "2024-08-28",
+      "Performance": 1
+    },
+    {
+      "date": "2024-09-04",
+      "Import / Media": 1
+    },
+    {
+      "date": "2024-09-12",
+      "Titles & Graphics": 1
+    },
+    {
+      "date": "2024-09-13",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-09-17",
+      "General": 1,
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-09-26",
+      "Audio": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2024-10-01",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-10-07",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-10-25",
+      "Export": 1
+    },
+    {
+      "date": "2024-11-07",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-11-08",
+      "Timeline": 2,
+      "User Interface": 1
+    },
+    {
+      "date": "2024-11-12",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-11-18",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-11-22",
+      "Import / Media": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2024-11-26",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-11-27",
+      "General": 1,
+      "Import / Media": 1
+    },
+    {
+      "date": "2024-12-01",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2024-12-06",
+      "Import / Media": 1
+    },
+    {
+      "date": "2024-12-13",
+      "Timeline": 1
+    },
+    {
+      "date": "2024-12-20",
+      "Import / Media": 2,
+      "Timeline": 3
+    },
+    {
+      "date": "2025-01-17",
+      "Import / Media": 1
+    },
+    {
+      "date": "2025-01-22",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-01-27",
+      "Export": 1,
+      "Timeline": 2
+    },
+    {
+      "date": "2025-02-05",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-02-06",
+      "Timeline": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-02-08",
+      "Audio": 1
+    },
+    {
+      "date": "2025-02-12",
+      "Timeline": 2
+    },
+    {
+      "date": "2025-02-24",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-03-03",
+      "Import / Media": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-03-04",
+      "Import / Media": 1,
+      "Timeline": 2
+    },
+    {
+      "date": "2025-03-06",
+      "Import / Media": 1,
+      "Share & Commenting": 2
+    },
+    {
+      "date": "2025-03-12",
+      "Audio": 1,
+      "Performance": 2,
+      "Settings": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-03-14",
+      "Import / Media": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-03-17",
+      "Import / Media": 1
+    },
+    {
+      "date": "2025-03-26",
+      "Share & Commenting": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-03-27",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-04-01",
+      "User Interface": 1
+    },
+    {
+      "date": "2025-04-02",
+      "Share & Commenting": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-04-03",
+      "Export": 3,
+      "Import / Media": 1
+    },
+    {
+      "date": "2025-04-08",
+      "Import / Media": 3,
+      "Performance": 1
+    },
+    {
+      "date": "2025-04-09",
+      "Audio": 1,
+      "Effects": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-04-10",
+      "Firefly": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-04-15",
+      "Import / Media": 1,
+      "Playback": 1,
+      "Timeline": 2,
+      "Transitions": 1
+    },
+    {
+      "date": "2025-04-16",
+      "General": 1,
+      "Import / Media": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-04-23",
+      "Import / Media": 1
+    },
+    {
+      "date": "2025-04-24",
+      "General": 1,
+      "Import / Media": 1
+    },
+    {
+      "date": "2025-04-29",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-04-30",
+      "General": 1
+    },
+    {
+      "date": "2025-05-05",
+      "Export": 1,
+      "Import / Media": 1
+    },
+    {
+      "date": "2025-05-06",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-05-16",
+      "User Interface": 1
+    },
+    {
+      "date": "2025-05-19",
+      "Export": 1
+    },
+    {
+      "date": "2025-06-13",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-06-23",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-06-24",
+      "Export": 1,
+      "Import / Media": 1,
+      "Share & Commenting": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-07-15",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-07-16",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-07-29",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-08-04",
+      "Export": 1
+    },
+    {
+      "date": "2025-08-06",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-08-13",
+      "User Interface": 1
+    },
+    {
+      "date": "2025-08-15",
+      "Audio": 1,
+      "Performance": 1
+    },
+    {
+      "date": "2025-08-22",
+      "General": 1,
+      "Performance": 1
+    },
+    {
+      "date": "2025-08-26",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-08-29",
+      "Export": 1
+    },
+    {
+      "date": "2025-09-02",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-09-03",
+      "Timeline": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-09-04",
+      "Import / Media": 3,
+      "Playback": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-09-08",
+      "Audio": 1,
+      "Firefly": 1,
+      "Import / Media": 1,
+      "Timeline": 3,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-09-10",
+      "Audio": 1,
+      "Effects": 1,
+      "Import / Media": 2,
+      "Settings": 1,
+      "Timeline": 8,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-09-11",
+      "Firefly": 1,
+      "Performance": 1
+    },
+    {
+      "date": "2025-09-17",
+      "Export": 1,
+      "Performance": 1,
+      "Share & Commenting": 1,
+      "Timeline": 5
+    },
+    {
+      "date": "2025-09-19",
+      "Import / Media": 1,
+      "Share & Commenting": 1,
+      "Timeline": 4
+    },
+    {
+      "date": "2025-09-24",
+      "Export": 1
+    },
+    {
+      "date": "2025-09-25",
+      "General": 1,
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-09-29",
+      "General": 1
+    },
+    {
+      "date": "2025-09-30",
+      "Performance": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-10-02",
+      "Firefly": 1,
+      "Share & Commenting": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-10-03",
+      "Audio": 2,
+      "Color": 1,
+      "Export": 1,
+      "Firefly": 1,
+      "Share & Commenting": 2,
+      "Timeline": 5
+    },
+    {
+      "date": "2025-10-06",
+      "Effects": 1,
+      "Firefly": 2,
+      "Share & Commenting": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-10-07",
+      "Firefly": 1,
+      "Share & Commenting": 1,
+      "Timeline": 3,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-10-08",
+      "Captions": 1,
+      "Export": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-10-09",
+      "Firefly": 1,
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-10-10",
+      "General": 1,
+      "Share & Commenting": 1,
+      "Timeline": 4,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-10-13",
+      "Export": 1,
+      "Firefly": 1,
+      "Timeline": 1,
+      "Transitions": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-10-14",
+      "Firefly": 2,
+      "Timeline": 1,
+      "User Interface": 1
+    },
+    {
+      "date": "2025-10-15",
+      "Timeline": 2
+    },
+    {
+      "date": "2025-10-16",
+      "Audio": 1
+    },
+    {
+      "date": "2025-10-17",
+      "Performance": 2
+    },
+    {
+      "date": "2025-10-20",
+      "Firefly": 3,
+      "Import / Media": 1,
+      "Settings": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-10-23",
+      "Audio": 1,
+      "Performance": 1
+    },
+    {
+      "date": "2025-10-28",
+      "Firefly": 1
+    },
+    {
+      "date": "2025-11-03",
+      "Firefly": 1
+    },
+    {
+      "date": "2025-11-04",
+      "Captions": 1
+    },
+    {
+      "date": "2025-11-06",
+      "Firefly": 2,
+      "Share & Commenting": 3,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-11-08",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-11-10",
+      "Audio": 1,
+      "Color": 1,
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-11-18",
+      "Captions": 1
+    },
+    {
+      "date": "2025-11-19",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-11-20",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2025-11-25",
+      "Share & Commenting": 1,
+      "Timeline": 2,
+      "Titles & Graphics": 1
+    },
+    {
+      "date": "2025-12-01",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-12-02",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-12-04",
+      "Timeline": 1
+    },
+    {
+      "date": "2025-12-05",
+      "Titles & Graphics": 1
+    },
+    {
+      "date": "2025-12-10",
+      "Firefly": 1,
+      "Import / Media": 1,
+      "Share & Commenting": 1,
+      "Timeline": 3
+    },
+    {
+      "date": "2025-12-11",
+      "Import / Media": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-12-12",
+      "Share & Commenting": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-12-16",
+      "General": 1,
+      "Timeline": 2
+    },
+    {
+      "date": "2025-12-17",
+      "Export": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2025-12-18",
+      "Firefly": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2026-01-06",
+      "Timeline": 1
+    },
+    {
+      "date": "2026-01-08",
+      "Export": 1,
+      "General": 1
+    },
+    {
+      "date": "2026-01-12",
+      "Timeline": 2
+    },
+    {
+      "date": "2026-01-13",
+      "General": 1
+    },
+    {
+      "date": "2026-01-14",
+      "General": 1,
+      "Share & Commenting": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2026-01-15",
+      "Firefly": 1,
+      "Timeline": 1
+    },
+    {
+      "date": "2026-01-21",
+      "User Interface": 1
+    },
+    {
+      "date": "2026-01-23",
+      "User Interface": 1
+    },
+    {
+      "date": "2026-01-27",
+      "Firefly": 1,
+      "General": 1,
+      "Playback": 1,
+      "Share & Commenting": 1,
+      "Timeline": 3
+    },
+    {
+      "date": "2026-01-30",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2026-02-02",
+      "Performance": 1
+    },
+    {
+      "date": "2026-02-04",
+      "Playback": 1
+    },
+    {
+      "date": "2026-02-05",
+      "Timeline": 1
+    },
+    {
+      "date": "2026-02-12",
+      "Share & Commenting": 1
+    },
+    {
+      "date": "2026-02-19",
+      "Import / Media": 1
+    },
+    {
+      "date": "2026-02-24",
+      "Export": 2,
+      "Performance": 1
+    },
+    {
+      "date": "2026-02-26",
+      "User Interface": 1
+    },
+    {
+      "date": "2026-02-27",
+      "Timeline": 1
+    },
+    {
+      "date": "2026-03-02",
+      "Audio": 1
+    },
+    {
+      "date": "2026-03-05",
+      "Import / Media": 1
+    },
+    {
+      "date": "2026-03-06",
+      "Import / Media": 1,
+      "Timeline": 1
+    }
+  ],
+  "lastUpdated": "2026-03-24T22:40:20.209Z"
 }
