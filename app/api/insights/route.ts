@@ -1,8 +1,23 @@
 import { getDb } from "@/lib/db";
-import type { InsightsData } from "@/app/api/insights/route";
-import Dashboard from "@/components/Dashboard";
 
-function getInsights(): InsightsData {
+export interface InsightsData {
+  totalCount: number;
+  byType: { type: string; count: number }[];
+  byFeature: { feature_category: string; count: number; bugs: number; feature_requests: number; comments: number }[];
+  overTime: { date: string; bugs: number; feature_requests: number; comments: number; total: number }[];
+  recentFeedback: {
+    id: string;
+    date: string;
+    type: string;
+    feature_category: string;
+    summary: string;
+    text: string;
+    slack_ts: string;
+    channel_id: string;
+  }[];
+}
+
+export async function GET() {
   try {
     const db = getDb();
 
@@ -14,7 +29,7 @@ function getInsights(): InsightsData {
       .prepare(
         "SELECT type, COUNT(*) as count FROM feedback GROUP BY type ORDER BY count DESC"
       )
-      .all() as InsightsData["byType"];
+      .all() as { type: string; count: number }[];
 
     const byFeature = db
       .prepare(`
@@ -46,26 +61,22 @@ function getInsights(): InsightsData {
 
     const recentFeedback = db
       .prepare(`
-        SELECT id, date, type, feature_category, summary, text
+        SELECT id, date, type, feature_category, summary, text, slack_ts, channel_id
         FROM feedback
         ORDER BY slack_ts DESC
         LIMIT 50
       `)
       .all() as InsightsData["recentFeedback"];
 
-    return { totalCount, byType, byFeature, overTime, recentFeedback };
-  } catch {
-    return {
-      totalCount: 0,
-      byType: [],
-      byFeature: [],
-      overTime: [],
-      recentFeedback: [],
-    };
+    return Response.json({
+      totalCount,
+      byType,
+      byFeature,
+      overTime,
+      recentFeedback,
+    } satisfies InsightsData);
+  } catch (error) {
+    console.error("Insights error:", error);
+    return Response.json({ error: String(error) }, { status: 500 });
   }
-}
-
-export default function Home() {
-  const data = getInsights();
-  return <Dashboard initial={data} />;
 }
