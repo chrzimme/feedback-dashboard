@@ -9,24 +9,24 @@
 import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as path from "path";
+import type { InsightsData, StaticFeedbackData } from "../lib/types";
 
-// Load .env.local before importing any lib that reads env vars
+// MUST run before any dynamic imports that read process.env
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 
-import { fetchMessages } from "../lib/slack";
-import { classifyMessages } from "../lib/classify";
-import { getDb } from "../lib/db";
-import type { InsightsData } from "../app/api/insights/route";
-
-export interface StaticFeedbackData extends InsightsData {
-  lastUpdated: string | null;
-}
+export type { StaticFeedbackData };
 
 async function main() {
   console.log("🔄 Starting Slack feedback refresh...\n");
 
   const channelId = process.env.SLACK_CHANNEL_ID;
   if (!channelId) throw new Error("SLACK_CHANNEL_ID not set in .env.local");
+
+  // Dynamic imports AFTER dotenv.config() — ensures env vars are available
+  // when lib modules initialize their clients (Slack WebClient, Anthropic, etc.)
+  const { fetchMessages } = await import("../lib/slack");
+  const { classifyMessages } = await import("../lib/classify");
+  const { getDb } = await import("../lib/db");
 
   const db = getDb();
 

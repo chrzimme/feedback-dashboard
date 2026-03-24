@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { RefreshCw, Tags } from "lucide-react";
-import type { InsightsData } from "@/app/api/insights/route";
+import type { InsightsData } from "@/lib/types";
 import StatCard from "./StatCard";
 import FeedbackOverTime from "./FeedbackOverTime";
 import TypeBreakdown from "./TypeBreakdown";
