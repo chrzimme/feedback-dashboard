@@ -1,0 +1,510 @@
+{
+  "totalCount": 17,
+  "byType": [
+    {
+      "type": "bug",
+      "count": 10
+    },
+    {
+      "type": "feature_request",
+      "count": 7
+    }
+  ],
+  "byFeature": [
+    {
+      "feature_category": "Timeline",
+      "count": 4,
+      "bugs": 0,
+      "feature_requests": 4,
+      "comments": 0
+    },
+    {
+      "feature_category": "Export",
+      "count": 4,
+      "bugs": 4,
+      "feature_requests": 0,
+      "comments": 0
+    },
+    {
+      "feature_category": "General",
+      "count": 3,
+      "bugs": 3,
+      "feature_requests": 0,
+      "comments": 0
+    },
+    {
+      "feature_category": "Firefly",
+      "count": 3,
+      "bugs": 2,
+      "feature_requests": 1,
+      "comments": 0
+    },
+    {
+      "feature_category": "Playback",
+      "count": 1,
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0
+    },
+    {
+      "feature_category": "Import / Media",
+      "count": 1,
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0
+    },
+    {
+      "feature_category": "Audio",
+      "count": 1,
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0
+    }
+  ],
+  "overTime": [
+    {
+      "date": "2026-02-24",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-02-26",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-02-27",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-01",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-02",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-06",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-09",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-12",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-14",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-16",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-18",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-19",
+      "bugs": 3,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 3
+    },
+    {
+      "date": "2026-03-20",
+      "bugs": 1,
+      "feature_requests": 0,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-23",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    },
+    {
+      "date": "2026-03-24",
+      "bugs": 0,
+      "feature_requests": 1,
+      "comments": 0,
+      "total": 1
+    }
+  ],
+  "recentFeedback": [
+    {
+      "id": "1774394632.222209",
+      "date": "2026-03-24",
+      "type": "feature_request",
+      "feature_category": "Timeline",
+      "summary": "being able to export the edited timeline as a Premiere Pro file or a feature where Premiere pro itself can be connected to the web video editor if it's included in the plan",
+      "text": "being able to export the edited timeline as a Premiere Pro file or a feature where Premiere pro itself can be connected to the web video editor if it's included in the plan",
+      "parent_text": "*NEW FIREFLY VIDEO FEATURE REQUEST*\n2026-03-24 17:23:42\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe your feature request:*\nbeing able to export the edited timeline as a Premiere Pro file or a feature where Premiere pro itself can be connected to the web video editor if it's included in the plan\n--------------------------------------------------\n\n*2. How would this feature request benefit you?*\nPremiere pro has more features and the generated  video does not load as the web version does when editing. It's easier for us editors to edit videos. \n--------------------------------------------------\n\n*3. How would you categorize this feature request?*\nFeature improvement — this feature improves upon existing functionality in this app\n--------------------------------------------------\n\n*4. Which of the following best describe you?*\nContent Creator\n--------------------------------------------------\n\n*Response ID:*\nR_4HY0gVXffO4awR2",
+      "reply_count": 0,
+      "sub_index": 0,
+      "slack_ts": "1774394632.222209",
+      "channel_id": "C0AGV0VNR7U",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1774296973.002859",
+      "date": "2026-03-23",
+      "type": "feature_request",
+      "feature_category": "Audio",
+      "summary": "a number of times (at least 3-4), in the video editor, once I have added a number of clips, when I click play it will either not play sound but play video fine, or it will not play at all and all I get is the status spinner. I'm often laying down one video clip that has has the sound, and then overlaying a screen recording over top so i can still get the audio. I often have to slice up or copy/paste the screen recording into multiple segments. The only way I can continue is by starting over.",
+      "text": "a number of times (at least 3-4), in the video editor, once I have added a number of clips, when I click play it will either not play sound but play video fine, or it will not play at all and all I get is the status spinner. I'm often laying down one video clip that has has the sound, and then overlaying a screen recording over top so i can still get the audio. I often have to slice up or copy/paste the screen recording into multiple segments. The only way I can continue is by starting over.",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-23 14:16:01\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\na number of times (at least 3-4), in the video editor, once I have added a number of clips, when I click play it will either not play sound but play video fine, or it will not play at all and all I get is the status spinner. I'm often laying down one video clip that has has the sound, and then overlaying a screen recording over top so i can still get the audio. I often have to slice up or copy/paste the screen recording into multiple segments. The only way I can continue is by starting over.\n\n\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_27q8fdkLSh3UTpv>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:26.3.1\nbrowser: Google Chrome:146.0.7680.80\n\nsigned in as: <mailto:blair@brighttools.co|blair@brighttools.co> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nenhance-speech-enabled: true\ngenerative-sound-effects: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_59ntEc6c3ATbqNK",
+      "reply_count": 23,
+      "sub_index": 0,
+      "slack_ts": "1774296973.002859",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1774022374.055119",
+      "date": "2026-03-20",
+      "type": "bug",
+      "feature_category": "Export",
+      "summary": "No able to export my video. It also doesnt tell me where is issue.",
+      "text": "No able to export my video. It also doesnt tell me where is issue.",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-20 09:58:30\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nNo able to export my video. It also doesnt tell me where is issue. \n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nCritical bug — I am not able to use this app because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_6yeNdlTZHA3TSqR>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:26.2.0\nbrowser: Google Chrome:146.0.7680.154\n\nsigned in as: <mailto:md25mdes15003@iith.ac.in|md25mdes15003@iith.ac.in> (type1)\nlocale: en-US (formatting language: en-GB)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nenhance-speech-enabled: true\ngenerative-sound-effects: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_9b2lUwaPYHd5nXz",
+      "reply_count": 6,
+      "sub_index": 0,
+      "slack_ts": "1774022374.055119",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773949673.261309",
+      "date": "2026-03-19",
+      "type": "bug",
+      "feature_category": "Firefly",
+      "summary": "i am even getting the error when I use current frame from a video generated by firefly",
+      "text": "i am even getting the error when I use current frame from a video generated by firefly",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-19 13:47:46\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\ni am even getting the error when I use current frame from a video generated by firefly\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_TnZGpwcDKf0cCSB>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:14.5.0\nbrowser: Google Chrome:146.0.7680.153\n\nsigned in as: <mailto:biz@studiotwest.com|biz@studiotwest.com> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nenhance-speech-enabled: true\ngenerative-sound-effects: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_6zdA1nRXlvfsERR",
+      "reply_count": 1,
+      "sub_index": 0,
+      "slack_ts": "1773949673.261309",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773948316.835169",
+      "date": "2026-03-19",
+      "type": "bug",
+      "feature_category": "Export",
+      "summary": "images exported from photoshop 2026 cannot be uploaded. copy the same image to PS 2025 and eporting the exact same way works.",
+      "text": "images exported from photoshop 2026 cannot be uploaded. copy the same image to PS 2025 and eporting the exact same way works.",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-19 13:24:25\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nimages exported from photoshop 2026 cannot be uploaded. copy the same image to PS 2025 and eporting the exact same way works.\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_3jcZftYCFIsg5mq>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:14.5.0\nbrowser: Google Chrome:146.0.7680.153\n\nsigned in as: <mailto:biz@studiotwest.com|biz@studiotwest.com> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nenhance-speech-enabled: true\ngenerative-sound-effects: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_5Jun6rrBHGRmUxj",
+      "reply_count": 1,
+      "sub_index": 0,
+      "slack_ts": "1773948316.835169",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773919175.123529",
+      "date": "2026-03-19",
+      "type": "bug",
+      "feature_category": "General",
+      "summary": "the sentence is not according to my commend:  \"A History of Triumphs in the Immune War\"\nthe spelling is the video is totally wrong.",
+      "text": "the sentence is not according to my commend:  \"A History of Triumphs in the Immune War\"\nthe spelling is the video is totally wrong.",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-19 05:19:15\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nthe sentence is not according to my commend:  \"A History of Triumphs in the Immune War\"\nthe spelling is the video is totally wrong.\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_URdS5ltFIuBMEGR>\n--------------------------------------------------\n\n* 4. Configuration details:*\nthe sentence is not according to my commend:  \"A History of Triumphs in the Immune War\"\nthe spelling is the video is totally wrong.\n--------------------------------------------------\n\n*Response ID:*\nR_9dKUqvBb9s4Jc28",
+      "reply_count": 0,
+      "sub_index": 0,
+      "slack_ts": "1773919175.123529",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773871160.873769",
+      "date": "2026-03-18",
+      "type": "feature_request",
+      "feature_category": "Timeline",
+      "summary": "It was great to be able to generate a lot of clips and put them on a timeline with my music. However, the editing capabilities are very lacking and I need to continue my workflow in PremierePro. I wish there was an easy way to export this as a premiere project with all of the clips and music.",
+      "text": "It was great to be able to generate a lot of clips and put them on a timeline with my music. However, the editing capabilities are very lacking and I need to continue my workflow in PremierePro. I wish there was an easy way to export this as a premiere project with all of the clips and music.",
+      "parent_text": "*NEW FIREFLY VIDEO FEATURE REQUEST*\n2026-03-18 15:58:58\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe your feature request:*\nIt was great to be able to generate a lot of clips and put them on a timeline with my music. However, the editing capabilities are very lacking and I need to continue my workflow in PremierePro. I wish there was an easy way to export this as a premiere project with all of the clips and music.\n--------------------------------------------------\n\n*2. How would this feature request benefit you?*\nIt would allow me to more easily complete my workflow\n--------------------------------------------------\n\n*3. How would you categorize this feature request?*\nNew capability — this feature is not found in other video editing apps\n--------------------------------------------------\n\n*4. Which of the following best describe you?*\nMarketer\n--------------------------------------------------\n\n*Response ID:*\nR_3lzw9ZwUEqjDlzb",
+      "reply_count": 1,
+      "sub_index": 0,
+      "slack_ts": "1773871160.873769",
+      "channel_id": "C0AGV0VNR7U",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773687220.186729",
+      "date": "2026-03-16",
+      "type": "feature_request",
+      "feature_category": "Firefly",
+      "summary": "Provide intuitive links to circumvent the expensive add AI add ons I just do not need. I just want to trim a video for Etsy. I don't want to generate anything and I pay for an Adobe license.",
+      "text": "Provide intuitive links to circumvent the expensive add AI add ons I just do not need. I just want to trim a video for Etsy. I don't want to generate anything and I pay for an Adobe license.",
+      "parent_text": "*NEW FIREFLY VIDEO FEATURE REQUEST*\n2026-03-16 12:53:33\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe your feature request:*\nProvide intuitive links to circumvent the expensive add AI add ons I just do not need. I just want to trim a video for Etsy. I don't want to generate anything and I pay for an Adobe license.\n--------------------------------------------------\n\n*2. How would this feature request benefit you?*\nI could quickly cut videos and upload them \n--------------------------------------------------\n\n*3. How would you categorize this feature request?*\nNew capability — this feature is not found in other video editing apps\n--------------------------------------------------\n\n*4. Which of the following best describe you?*\nEducator\n--------------------------------------------------\n\n*Response ID:*\nR_6Ea3LBK5pCDVxKd",
+      "reply_count": 0,
+      "sub_index": 0,
+      "slack_ts": "1773687220.186729",
+      "channel_id": "C0AGV0VNR7U",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773495295.143459",
+      "date": "2026-03-14",
+      "type": "bug",
+      "feature_category": "Export",
+      "summary": "wON'T LET ME EXPORT MY VIDEO, i HAVE BEEN TRYING FOR ABOUT AN HOUR",
+      "text": "wON'T LET ME EXPORT MY VIDEO, i HAVE BEEN TRYING FOR ABOUT AN HOUR",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-14 07:34:25\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nwON'T LET ME EXPORT MY VIDEO, i HAVE BEEN TRYING FOR ABOUT AN HOUR\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_33pwkrmfuVRLnEB>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: Windows:19.0.0\nbrowser: Google Chrome:146.0.7680.80\n\nsigned in as: <mailto:glennew91@gmail.com|glennew91@gmail.com> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_1NqfwI0srIwQITu",
+      "reply_count": 12,
+      "sub_index": 0,
+      "slack_ts": "1773495295.143459",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773335446.526859",
+      "date": "2026-03-12",
+      "type": "bug",
+      "feature_category": "General",
+      "summary": "i used my credit, but it doesn't work. i spent 1400 credit, but i can't get anything",
+      "text": "i used my credit, but it doesn't work. i spent 1400 credit, but i can't get anything",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-12 11:10:31\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\ni used my credit, but it doesn't work. i spent 1400 credit, but i can't get anything\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nCritical bug — I am not able to use this app because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_2TZPdn6QewIy7Q5>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:26.3.0\nbrowser: Google Chrome:146.0.7680.71\n\nsigned in as: <mailto:hgchun98@naver.com|hgchun98@naver.com> (type1)\nlocale: ko-KR (formatting language: ko-KR)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_4Nf4Y5ReHiaATbg",
+      "reply_count": 5,
+      "sub_index": 0,
+      "slack_ts": "1773335446.526859",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1773095658.041209",
+      "date": "2026-03-09",
+      "type": "bug",
+      "feature_category": "Playback",
+      "summary": "Cannot play video even after pressing play.. nothing happens",
+      "text": "Cannot play video even after pressing play.. nothing happens",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-09 16:34:09\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nCannot play video even after pressing play.. nothing happens\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nCritical bug — I am not able to use this app because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n\n--------------------------------------------------\n\n* 4. Configuration details:*\n\n--------------------------------------------------\n\n*Response ID:*\nR_70hTWZkmihBb1Sx",
+      "reply_count": 0,
+      "sub_index": 0,
+      "slack_ts": "1773095658.041209",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1772815299.391429",
+      "date": "2026-03-06",
+      "type": "bug",
+      "feature_category": "General",
+      "summary": "None of the video generation is working for me. Just errors.",
+      "text": "None of the video generation is working for me. Just errors.",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-06 09:41:31\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nNone of the video generation is working for me. Just errors. \n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_d5oXNgywKVtQlrz>\n--------------------------------------------------\n\n* 4. Configuration details:*\n\n--------------------------------------------------\n\n*Response ID:*\nR_7EWRvS59kMwZril",
+      "reply_count": 18,
+      "sub_index": 0,
+      "slack_ts": "1772815299.391429",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1772428974.002879",
+      "date": "2026-03-02",
+      "type": "bug",
+      "feature_category": "Firefly",
+      "summary": "'I can't generate video using Google VEO 3.1. I'm using picture as a reference. But when i click generate\". There is an error message: Something went wron, Please try again.\n\nPlease fix this bug ASAP!",
+      "text": "'I can't generate video using Google VEO 3.1. I'm using picture as a reference. But when i click generate\". There is an error message: Something went wron, Please try again.\n\nPlease fix this bug ASAP!",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-01 22:22:41\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\n'I can't generate video using Google VEO 3.1. I'm using picture as a reference. But when i click generate\". There is an error message: Something went wron, Please try again.\n\nPlease fix this bug ASAP!\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nCritical bug — I am not able to use this app because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_XYynpjD8q1vijPH>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: Windows:10.0.0\nbrowser: Google Chrome:145.0.7632.117\n\nsigned in as: <mailto:amasdiyanto13@gmail.com|amasdiyanto13@gmail.com> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_9hdgzIro5UDPDfX",
+      "reply_count": 11,
+      "sub_index": 0,
+      "slack_ts": "1772428974.002879",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1772404852.668169",
+      "date": "2026-03-01",
+      "type": "feature_request",
+      "feature_category": "Timeline",
+      "summary": "I was editing a video and I was dragging clips around to additional layers to get them out of my way for a minute and now all of a sudden the main clip has no audio. i don't have it muted (And even tried toggling mute and unmute and no change).",
+      "text": "I was editing a video and I was dragging clips around to additional layers to get them out of my way for a minute and now all of a sudden the main clip has no audio. i don't have it muted (And even tried toggling mute and unmute and no change).",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-03-01 15:40:37\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nI was editing a video and I was dragging clips around to additional layers to get them out of my way for a minute and now all of a sudden the main clip has no audio. i don't have it muted (And even tried toggling mute and unmute and no change).\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:26.2.0\nbrowser: Google Chrome:145.0.7632.110\n\nsigned in as: <mailto:jtonsrud@cronsrud.com|jtonsrud@cronsrud.com> (type2e, (Active profile: C.R. Onsrud, Inc., eoa))\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_3oZ2dZr07LQBeh6",
+      "reply_count": 7,
+      "sub_index": 0,
+      "slack_ts": "1772404852.668169",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1772210535.690649",
+      "date": "2026-02-27",
+      "type": "feature_request",
+      "feature_category": "Timeline",
+      "summary": "Ability to save or export timelines as Premiere Pro projects to continue more in-depth editing after using Quick Cut. Many AI video editing apps do not offer this feature and it would be a great pain point to address all within the Adobe Suite.",
+      "text": "Ability to save or export timelines as Premiere Pro projects to continue more in-depth editing after using Quick Cut. Many AI video editing apps do not offer this feature and it would be a great pain point to address all within the Adobe Suite.",
+      "parent_text": "*NEW FIREFLY VIDEO FEATURE REQUEST*\n2026-02-27 09:41:48\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe your feature request:*\nAbility to save or export timelines as Premiere Pro projects to continue more in-depth editing after using Quick Cut. Many AI video editing apps do not offer this feature and it would be a great pain point to address all within the Adobe Suite.\n--------------------------------------------------\n\n*2. How would this feature request benefit you?*\nThis would make the Quick Cut tool more appealing to existing, traditional video editors by allowing them to make an initial draft in Firefly and then continue editing in the platform they're more familiar and comfortable with (and has more capabilities), Premiere Pro. \n--------------------------------------------------\n\n*3. How would you categorize this feature request?*\nNew capability — this feature is not found in other video editing apps\n--------------------------------------------------\n\n*4. Which of the following best describe you?*\nVideo Professional\n--------------------------------------------------\n\n*Response ID:*\nR_7xPoZ8emKPqer4c",
+      "reply_count": 3,
+      "sub_index": 0,
+      "slack_ts": "1772210535.690649",
+      "channel_id": "C0AGV0VNR7U",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1772112460.403399",
+      "date": "2026-02-26",
+      "type": "feature_request",
+      "feature_category": "Import / Media",
+      "summary": "asked  firefly to create a documentary from the footage \n\"create a documentation about this craftsman building bikes\"\n\n\nSorry, wir konnten deinen Request nicht einreichen.\nVersuche es erneut. Wenn das Problem weiterhin besteht, kontaktiere den Support.",
+      "text": "asked  firefly to create a documentary from the footage \n\"create a documentation about this craftsman building bikes\"\n\n\nSorry, wir konnten deinen Request nicht einreichen.\nVersuche es erneut. Wenn das Problem weiterhin besteht, kontaktiere den Support.",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-02-26 06:27:16\n--------------------------------------------------\n\n*1. In as much detail as possible, please describe the bug you experienced.*\nasked  firefly to create a documentary from the footage \n\"create a documentation about this craftsman building bikes\"\n\n\nSorry, wir konnten deinen Request nicht einreichen.\nVersuche es erneut. Wenn das Problem weiterhin besteht, kontaktiere den Support.\n--------------------------------------------------\n\n*2. Please rate the severity of the bug you experienced.*\nMajor bug — I was not able to accomplish a task because of this bug\n--------------------------------------------------\n\n*3. If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_1f6Fxodyjcd65f0>\n--------------------------------------------------\n\n* 4. Configuration details:*\nenvironment: <https://firefly.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:26.3.0\nbrowser: Google Chrome:145.0.7632.76\n\nsigned in as: ADOBE2@THEWORSTCASE.DE (type1)\nlocale: de-DE (formatting language: de-DE)\n\nModified feature flags:\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-story-builder: true\nenable-timeline-poster-frame: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID:*\nR_8kMSNEuDCIkreKW",
+      "reply_count": 1,
+      "sub_index": 0,
+      "slack_ts": "1772112460.403399",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    },
+    {
+      "id": "1771960570.908429",
+      "date": "2026-02-24",
+      "type": "bug",
+      "feature_category": "Export",
+      "summary": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-02-24 12:15:52\n--------------------------------------------------\n\n*1 - In as much detail as possible, please describe the bug you experienced*\nTest\n--------------------------------------------------\n\n*2 -  Please rate the severity of the bug you experienced*\nMinor bug — Issue is not blocking my progress\n--------------------------------------------------\n\n*3 - If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experie",
+      "text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-02-24 12:15:52\n--------------------------------------------------\n\n*1 - In as much detail as possible, please describe the bug you experienced*\nTest\n--------------------------------------------------\n\n*2 -  Please rate the severity of the bug you experienced*\nMinor bug — Issue is not blocking my progress\n--------------------------------------------------\n\n*3 - If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_9tYshn6wfDSiDdv>\n--------------------------------------------------\n\n* 4 - Configuration details:*\nenvironment: <https://firefly-stage.corp.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:15.7.3\nbrowser: Google Chrome:145.0.7632.110\n\nsigned in as: <mailto:lkraff+squirreltest1@adobetest.com|lkraff+squirreltest1@adobetest.com> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-debug-panel: true\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-preview-pan-zoom: true\nenable-timeline-poster-frame: true\nheic-transcode-support: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-optimized-app-config-data-transfer-in-renderers: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID*\nR_3QW3jMAoislZZ8O",
+      "parent_text": "*:rotating_light: NEW FIREFLY VIDEO BUG REPORT*\n2026-02-24 12:15:52\n--------------------------------------------------\n\n*1 - In as much detail as possible, please describe the bug you experienced*\nTest\n--------------------------------------------------\n\n*2 -  Please rate the severity of the bug you experienced*\nMinor bug — Issue is not blocking my progress\n--------------------------------------------------\n\n*3 - If possible, please upload a screenshot (JPG, PNG, GIF) of the bug/error you experienced.*\n<https://survey.adobe.com/WRQualtricsSurveyEngine/File.php?F=F_9tYshn6wfDSiDdv>\n--------------------------------------------------\n\n* 4 - Configuration details:*\nenvironment: <https://firefly-stage.corp.adobe.com/video/editor>\n\ncommitShaBranch: NOT_AVAILABLE\n\nhz-build-info-branch: undefined\nhz-build-info-sha: undefined\ndeployed-service-name: NOT_AVAILABLE\n\nplatform: macOS:15.7.3\nbrowser: Google Chrome:145.0.7632.110\n\nsigned in as: <mailto:lkraff+squirreltest1@adobetest.com|lkraff+squirreltest1@adobetest.com> (type1)\nlocale: en-US (formatting language: en-US)\n\nModified feature flags:\nenable-debug-panel: true\nenable-experimentation: true\nenable-export-via-walnut-plugin: false\nenable-missing-media-overlay: true\nenable-preview-pan-zoom: true\nenable-timeline-poster-frame: true\nheic-transcode-support: true\nis-firefly-version: true\nplayback-audio-clock: true\nsemantic-search-disabled: true\nsquirrel-sync-ims-profile-with-firefly: true\nuse-optimized-app-config-data-transfer-in-renderers: true\nuse-webcodec-for-audio-decoding: true\n--------------------------------------------------\n\n*Response ID*\nR_3QW3jMAoislZZ8O",
+      "reply_count": 0,
+      "sub_index": 0,
+      "slack_ts": "1771960570.908429",
+      "channel_id": "C0AGRHQ0L8M",
+      "corrected_type": null,
+      "corrected_feature_category": null,
+      "is_corrected": 0
+    }
+  ],
+  "featureOverTime": [
+    {
+      "date": "2026-02-24",
+      "Export": 1
+    },
+    {
+      "date": "2026-02-26",
+      "Import / Media": 1
+    },
+    {
+      "date": "2026-02-27",
+      "Timeline": 1
+    },
+    {
+      "date": "2026-03-01",
+      "Timeline": 1
+    },
+    {
+      "date": "2026-03-02",
+      "Firefly": 1
+    },
+    {
+      "date": "2026-03-06",
+      "General": 1
+    },
+    {
+      "date": "2026-03-09",
+      "Playback": 1
+    },
+    {
+      "date": "2026-03-12",
+      "General": 1
+    },
+    {
+      "date": "2026-03-14",
+      "Export": 1
+    },
+    {
+      "date": "2026-03-16",
+      "Firefly": 1
+    },
+    {
+      "date": "2026-03-18",
+      "Timeline": 1
+    },
+    {
+      "date": "2026-03-19",
+      "Export": 1,
+      "Firefly": 1,
+      "General": 1
+    },
+    {
+      "date": "2026-03-20",
+      "Export": 1
+    },
+    {
+      "date": "2026-03-23",
+      "Audio": 1
+    },
+    {
+      "date": "2026-03-24",
+      "Timeline": 1
+    }
+  ],
+  "lastUpdated": "2026-03-25T15:32:49.649Z"
+}
